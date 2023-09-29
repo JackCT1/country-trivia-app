@@ -1,0 +1,20 @@
+.App {
+  font-family: "Libre Franklin", sans-serif;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  background-color: rgb(237, 237, 237);
+  font-family: "Open Sans";
+}
+
+.content {
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  background-color: aliceblue;
+  padding: 16px;
+  margin: 16px;
+  overflow: auto;
+  border-radius: 10px;
+}
