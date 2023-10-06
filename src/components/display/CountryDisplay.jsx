@@ -4,6 +4,7 @@ export default function CountryList({ selectedCountry }) {
   const [countryData, setCountryData] = useState(undefined);
   console.log(selectedCountry);
   console.log(countryData);
+  console.log(Object.values(countryData.currencies)[0].name);
 
   useEffect(() => {
     if (selectedCountry) {
@@ -34,6 +35,7 @@ export default function CountryList({ selectedCountry }) {
       <h1>Country:{countryData.name.common}</h1>
       <p>Capital:{countryData.capital}</p>
       <p>Population:{countryData.population}</p>
+      <p>Currency:{Object.values(countryData.currencies)[0].name}</p>
       <img src={countryData.flags.png} alt="" />
     </div>
   );
