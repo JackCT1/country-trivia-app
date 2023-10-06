@@ -10,8 +10,8 @@ function App() {
     event.preventDefault();
     const country = event.target.textContent;
     setSelectedCountry(country);
-    console.log(selectedCountry);
   };
+
   return (
     <div className="App">
       <CountryList selectedCountry={selectedCountry} />
