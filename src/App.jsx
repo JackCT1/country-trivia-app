@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <CountryList selectedCountry={selectedCountry} />
-      <CountryDisplay displayCountry={displayCountry} />
+      <CountryList displayCountry={displayCountry} />
+      <CountryDisplay selectedCountry={selectedCountry} />
     </div>
   );
 }
