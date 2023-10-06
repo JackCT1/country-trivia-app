@@ -5,10 +5,17 @@ import { useState } from "react";
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState("");
+
+  const displayCountry = (event) => {
+    event.preventDefault();
+    const country = event.target.textContent;
+    setSelectedCountry(country);
+    console.log(selectedCountry);
+  };
   return (
     <div className="App">
-      <CountryList />
-      <CountryDisplay />
+      <CountryList selectedCountry={selectedCountry} />
+      <CountryDisplay displayCountry={displayCountry} />
     </div>
   );
 }
