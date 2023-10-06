@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function CountryDisplay() {
+export default function CountryDisplay({ displayCountry }) {
   const [countryData, setCountryData] = useState(undefined);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function CountryDisplay() {
         {countryData.map((country) => {
           return (
             // eslint-disable-next-line react/jsx-key
-            <button>
+            <button onClick={displayCountry}>
               <h2>{country.name.common}</h2>
             </button>
           );
