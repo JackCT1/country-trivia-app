@@ -4,7 +4,7 @@ export default function CountryList({ selectedCountry }) {
   const [countryData, setCountryData] = useState(undefined);
   console.log(selectedCountry);
   console.log(countryData);
-  console.log(Object.values(countryData.currencies)[0].name);
+  //console.log(Object.values(countryData.currencies)[0].name);
 
   useEffect(() => {
     if (selectedCountry) {
